@@ -1,5 +1,5 @@
-from typing import Annotated
 from fastapi import Depends
+from typing import Annotated
 
 from services import UserService
 from services.unit_of_work import UnitOfWotk, IUnitOfWork

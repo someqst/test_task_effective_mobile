@@ -1,9 +1,9 @@
-from fastapi import APIRouter, Response, Request, Depends
 from fastapi.exceptions import HTTPException
+from fastapi import APIRouter, Response, Depends
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
-from data.create_user_form import CreateUserPost, LoginUserPost
 
 from utils.depends import UserServiceDep
+from data.create_user_form import CreateUserPost, LoginUserPost
 
 
 router = APIRouter()

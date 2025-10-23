@@ -1,10 +1,10 @@
-from data.create_user_form import (CreateUserPost, LoginUserPost,
-                                   UserToDB, UserFromDB)
-from bcrypt import hashpw, gensalt, checkpw
 import jwt
 from fastapi import HTTPException
-
 from datetime import datetime, timedelta
+from bcrypt import hashpw, gensalt, checkpw
+
+from data.create_user_form import (CreateUserPost, UserFromDB,
+                                   UserToDB, LoginUserPost)
 from data.config import settings
 
 from services.unit_of_work import IUnitOfWork

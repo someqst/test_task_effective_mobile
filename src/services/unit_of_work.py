@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
-from database.repositories import UserRepository
 
 from database.core import SESSION_MAKER
+from database.repositories import UserRepository
 
 
 class IUnitOfWork(ABC):

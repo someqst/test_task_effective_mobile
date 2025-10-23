@@ -1,4 +1,5 @@
 import re
+
 from sqlalchemy import BigInteger, Boolean, String
 from sqlalchemy.orm import Mapped, mapped_column, validates
 
